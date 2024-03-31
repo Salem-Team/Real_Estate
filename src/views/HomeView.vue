@@ -44,7 +44,7 @@
                 alt=""
                 style="
                   top: -140px;
-                  left: 118px;
+                  left: 25px;
                 "
               />
             </div>
