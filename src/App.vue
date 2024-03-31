@@ -17,5 +17,8 @@
   --Content_Color: #8f8f8f;
   --Link_Color: #b16642;
   --Border_Color: #b16642;
+  --Background_color: #f3d1c1;
+  --Text_Color:#757575;
+
 }
 </style>
