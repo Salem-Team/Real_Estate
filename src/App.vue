@@ -1,11 +1,18 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <app-layout>
+    <router-view />
+  </app-layout>
 </template>
+<script>
+// @ is an alias to /src
+import AppLayout from "@/components/global/AppLayout.vue";
 
+export default {
+  components: {
+    AppLayout,
+  },
+};
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -26,5 +33,8 @@ nav {
       color: #42b983;
     }
   }
+}
+li {
+  list-style: none;
 }
 </style>
