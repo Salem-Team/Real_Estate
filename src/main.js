@@ -17,6 +17,17 @@ import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 
+// import store from "./store";
+// import tailwindcss
+import "./style.css";
+// Vuetify
+// import "vuetify/styles";
+// import { createVuetify } from "vuetify";
+// import * as components from "vuetify/components";
+// import * as directives from "vuetify/directives";
+// Mdi_Fonts
+import "@mdi/font/css/materialdesignicons.css";
+
 const vuetify = createVuetify({
   components,
   directives,
@@ -37,3 +48,4 @@ createApp(App)
   .use(createPinia())
   .use(router)
   .mount("#app");
+// createApp(App).use(vuetify).use(store).use(router).mount("#app");
