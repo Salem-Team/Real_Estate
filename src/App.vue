@@ -30,8 +30,7 @@ export default {
   --Link_Color: #b16642;
   --Border_Color: #b16642;
   --Background_color: #f3d1c1;
-  --Text_Color:#757575;
-
+  --Text_Color: #757575;
 }
 li {
   list-style: none;

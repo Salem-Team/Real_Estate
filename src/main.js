@@ -16,22 +16,16 @@ import "vuetify/styles";
 import { createVuetify } from "vuetify";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
-
-// import store from "./store";
-// import tailwindcss
-import "./style.css";
-// Vuetify
-// import "vuetify/styles";
-// import { createVuetify } from "vuetify";
-// import * as components from "vuetify/components";
-// import * as directives from "vuetify/directives";
-// Mdi_Fonts
-import "@mdi/font/css/materialdesignicons.css";
-
 const vuetify = createVuetify({
   components,
   directives,
 });
+
+// import store from "./store";
+// import tailwindcss
+import "./style.css";
+// Mdi_Fonts
+import "@mdi/font/css/materialdesignicons.css";
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
