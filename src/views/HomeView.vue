@@ -3,9 +3,9 @@
     <!-- Start Landding Banner -->
     <div class="parent">
       <v-container>
-        <v-row>
-          <v-col cols="5">
-            <div class="cont d-flex flex-column text-left mt-24">
+        <v-row style="margin-top: 300px !important;">
+          <v-col cols="5" >
+            <div class="cont d-flex flex-column text-left mt-24" >
               <h4 class="flex flex-row justify-center gap-1 p-1">
                 <span 
                   ><img src="@/assets/home_icon.svg" alt="" /></span

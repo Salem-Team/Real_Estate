@@ -5,7 +5,7 @@
         style="padding: 30px 30px; margin-top: 70px; transform: translateX(15%)"
         height="fit-content"
         class="w-75"
-        scroll-threshold="1000"
+        absolute
       >
         <v-container>
           <v-row>

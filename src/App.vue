@@ -2,7 +2,6 @@
   <app-layout>
     <router-view />
   </app-layout>
-  <router-view />
 </template>
 <script>
 // @ is an alias to /src
