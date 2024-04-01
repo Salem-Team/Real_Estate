@@ -12,23 +12,14 @@
   font-style: normal;
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 :root {
   --Primary_Color: #3b3a5d;
   --Secondary_Color: #ffbb50;
   --Content_Color: #8f8f8f;
   --Link_Color: #b16642;
   --Border_Color: #b16642;
+  --Background_color: #f3d1c1;
+  --Text_Color:#757575;
+
 }
 </style>
