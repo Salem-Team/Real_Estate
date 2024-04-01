@@ -31,8 +31,8 @@ const routes = [
     component: AgentDetails,
   },
   {
-    path: "/agent-view",
-    name: "agent-view",
+    path: "/agent_view",
+    name: "agent_view",
     component: AgentView,
   },
   {
