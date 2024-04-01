@@ -3,9 +3,9 @@
     <!-- Start Landding Banner -->
     <div class="parent">
       <v-container>
-        <v-row>
-          <v-col cols="5">
-            <div class="cont d-flex flex-column text-left mt-24">
+        <v-row style="margin-top: 300px !important;">
+          <v-col cols="5" >
+            <div class="cont d-flex flex-column text-left mt-24" >
               <h4 class="flex flex-row justify-center gap-1 p-1">
                 <span 
                   ><img src="@/assets/home_icon.svg" alt="" /></span
@@ -27,25 +27,22 @@
                   font-weight: bold;
                   text-transform: capitalize;
                   border: none;
+                  padding:24px, 30px;
                 "
                 >Explore Property
                 <img src="@/assets/home_arrow.svg" alt="" />
               </v-btn>
             </div>
           </v-col>
-          <v-col cols="7">
+          <v-col cols="6">
             <div
-              class="parent_img"
-              style="width: 700px; height: 700px; position: relative"
+              class="parent_img relative"
             >
               <img
-                class=" w-full h-fit absolute"
+                class=" w-full h-fit absolute top--40 left-56"
                 src="@/assets/Image-6.png"
                 alt=""
-                style="
-                  top: -140px;
-                  left: 25px;
-                "
+
               />
             </div>
           </v-col>
@@ -88,8 +85,13 @@
     </div>
     <!--End About Section -->
   </section>
+
 </template>
 <script>
+
+// @ is an alias to /src
+
+
 export default {
   name: "HomeView",
   components: {},
@@ -105,7 +107,8 @@ body {
   .parent {
     background-image: url("../assets/Background-1.jpg");
     background-size: cover;
-    height: 103vh;
+    height: fit-content;
+    width:  100%;
     overflow: hidden;
     .cont {
       h4 {
@@ -138,6 +141,7 @@ body {
 // Start about section
 
 .about_subtitle {
+  height: 449px;
   .about_title{
     h3{ 
       font-family: Source Sans 3;
@@ -172,6 +176,9 @@ body {
   }
   .points{
     color:var(--Text_Color);
+  }
+  .about_video{
+    height: 449px;
   }
 }
 // End about section

@@ -1,7 +1,18 @@
 <template>
-  <router-view />
+  <app-layout>
+    <router-view />
+  </app-layout>
 </template>
+<script>
+// @ is an alias to /src
+import AppLayout from "@/components/global/AppLayout.vue";
 
+export default {
+  components: {
+    AppLayout,
+  },
+};
+</script>
 <style lang="scss">
 // Add Kufam Fonts
 @import url("https://fonts.googleapis.com/css2?family=Kufam:ital@0;1&display=swap");
@@ -21,5 +32,8 @@
   --Background_color: #f3d1c1;
   --Text_Color:#757575;
 
+}
+li {
+  list-style: none;
 }
 </style>
