@@ -1245,7 +1245,7 @@
 </template>
 <script>
 export default {
-  name: "agent-details",
+  name: "agent_details",
 };
 </script>
 <style lang="scss" scoped>
