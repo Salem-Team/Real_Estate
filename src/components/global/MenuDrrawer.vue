@@ -99,7 +99,7 @@ export default {
   },
 };
 </script>
-<style lang="css">
+<style lang="css" scoped>
 @media (max-width: 580px) {
   .nav-link {
     font-size: 12px;

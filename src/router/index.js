@@ -21,13 +21,13 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/about-view",
-    name: "about-view",
+    path: "/about_view",
+    name: "about_view",
     component: AboutView,
   },
   {
-    path: "/agent-details",
-    name: "agent-details",
+    path: "/agent_details",
+    name: "agent_details",
     component: AgentDetails,
   },
   {
@@ -76,8 +76,8 @@ const routes = [
     component: PropertySingl,
   },
   {
-    path: "/property-view",
-    name: "property-view",
+    path: "/property_view",
+    name: "property_view",
     component: PropertyView,
   },
   {

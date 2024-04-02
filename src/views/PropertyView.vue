@@ -31,7 +31,7 @@
 </template>
 <script>
 export default {
-  name: "property-view",
+  name: "property_view",
   components: {},
 };
 </script>
