@@ -4,8 +4,8 @@
     <div class="parent">
       <v-container>
         <v-row>
-          <v-col cols="5">
-            <div class="cont d-flex flex-column text-left mt-24">
+          <v-col cols="5" class="mt-32">
+            <div class="cont d-flex flex-column text-left mt-32 mb-6">
               <h4 class="flex flex-row gap-1 p-1">
                 <span><img src="@/assets/home_icon.svg" alt="" /></span
                 >properties
@@ -13,7 +13,7 @@
               <h1 class="title">Browse properties</h1>
             </div>
           </v-col>
-          <v-col cols="7">
+          <v-col cols="7" class="mt-10">
             <div class="parent_img relative">
               <img
                 class="w-full h-fit absolute"
@@ -45,7 +45,6 @@ body {
   .parent {
     background-image: url("../assets/Background-1.jpg");
     background-size: cover;
-    height: 73vh;
     overflow: hidden;
     .cont {
       h4 {
