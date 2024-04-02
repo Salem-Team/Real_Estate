@@ -569,7 +569,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 @media (max-width: 1300px) {
   .col_1 {
     border: none !important;

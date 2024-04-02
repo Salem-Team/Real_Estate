@@ -100,7 +100,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .v-overlay__content {
   position: relative;
 }

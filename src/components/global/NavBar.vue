@@ -57,9 +57,11 @@
             <v-col cols="7" style="display: flex; justify-content: flex-end">
               <v-toolbar-items class="mt-4">
                 <v-btn-toggle v-model="toggle_exclusive">
-                  <v-btn>home</v-btn>
-                  <v-btn>about</v-btn>
-                  <v-btn> Properties </v-btn>
+                  <v-btn @click="$router.push('/')">home</v-btn>
+                  <v-btn @click="$router.push('/about_view')">about</v-btn>
+                  <v-btn @click="$router.push('/property_view')">
+                    Properties
+                  </v-btn>
                   <div class="d-flex justify-space-around">
                     <v-menu>
                       <template v-slot:activator="{ props }">
@@ -153,7 +155,7 @@ export default {
   }),
 };
 </script>
-<style>
+<style scoped>
 @media (max-width: 1300px) {
 }
 @media (max-width: 800px) {
