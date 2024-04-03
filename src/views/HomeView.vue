@@ -394,6 +394,7 @@ body {
   }
   hr {
     color: #e4e4e4;
+    width: 1199px;
   }
 }
 
