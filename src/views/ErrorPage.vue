@@ -3591,8 +3591,6 @@ export default {
   .name_head {
     font-size: 250px !important;
   }
-  .hed_fou {
-  }
 }
 @media (max-width: 992px) {
   .name_head {
