@@ -1,8 +1,5 @@
 <template>
   <!-- Start Landding Banner -->
-<<<<<<< Updated upstream
-  <section class="home"></section>
-=======
   <section class="home overflow-hidden w-full">
     <div class="landing flex flex-column mt-64 ml-10">
       <div class="text text-left w-5/12 mt-10">
@@ -160,8 +157,6 @@
       </div>
     </div>
   </section>
-  <section></section>
->>>>>>> Stashed changes
 </template>
 <script>
 export default {
@@ -174,8 +169,6 @@ body {
   padding: 0;
   margin: 0;
 }
-<<<<<<< Updated upstream
-=======
 //Start Landding Banner
 .home {
   background: url(/src/assets/Background-1.jpg) no-repeat center;
@@ -314,28 +307,28 @@ body {
     width: 921px;
     height: 464px;
     max-height: 700px;
-  }
-  .item_bg {
-    background: url(/src/assets/why_choose_background1.svg) no-repeat right
-      bottom / cover;
-    height: 464px;
-    max-height: 600px;
-    width: 442px;
-    max-width: fit-content; /* This is to make sure the card doesn't go off screen on smaller screens */
-  }
-  .content {
-    height: 150px;
-    h1 {
-      font-family: Kufam;
-      font-size: 25px;
-      font-weight: 600;
-      line-height: 29.62px;
-      text-align: left;
-      color: var(--Primary_Color);
+    .item_bg {
+      background: url(/src/assets/why_choose_background1.svg) no-repeat right
+        bottom / cover;
+      height: 464px;
+      max-height: 600px;
+      width: 442px;
+      max-width: fit-content; /* This is to make sure the card doesn't go off screen on smaller screens */
     }
-    p {
-      font-family: Source Sans 3;
-      color: var(--Border_Color);
+    .content {
+      height: 150px;
+      h1 {
+        font-family: Kufam;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 29.62px;
+        text-align: left;
+        color: var(--Primary_Color);
+      }
+      p {
+        font-family: Source Sans 3;
+        color: var(--Border_Color);
+      }
     }
   }
 }
@@ -461,5 +454,19 @@ body {
     max-width: 100% !important;
   }
 }
->>>>>>> Stashed changes
+@media screen and (max-width: 900px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .about_subtitle {
+      margin: 0;
+      width: 100%;
+    }
+  }
+  .details {
+    max-width: 100%;
+  }
+}
 </style>
