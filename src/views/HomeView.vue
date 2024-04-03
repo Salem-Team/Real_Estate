@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <section class="banner">
     <!-- Start Landding Banner -->
     <div class="parent">
@@ -45,46 +44,13 @@
           </v-col>
         </v-row>
       </v-container>
-=======
-  <!-- Start Landding Banner -->
-  <section class="home overflow-hidden w-full">
-    <div class="landing flex flex-column mt-64 ml-10">
-      <div class="text text-left w-5/12 mt-10">
-        <div id="title" class="flex flex-row gap-1 w-7/12 mb-4 p-1">
-          <span><img src="@/assets/home_icon.svg" alt="" /></span>
-          Real Estate Agency
-        </div>
-        <h1 class="mb-4">Find the perfect place to Live with your family</h1>
-        <p class="mb-4">
-          Distinctively re-engineer revolutionary meta-services and premium
-          architectures. Intrinsically incubate.
-        </p>
-        <button type="submit" class="flex flex-row gap-1 mb-20">
-          Explore Property
-          <span
-            ><img class="relative top-1" src="@/assets/home_arrow.svg" alt=""
-          /></span>
-        </button>
-      </div>
-      <div class="image relative w-6/12 ml-60">
-        <img
-          class="absolute left-96 bottom-0.5 mr-1 max-w-full"
-          src="@/assets/Image-6.png"
-          alt=""
-        />
-      </div>
->>>>>>> f7760ed80ca3e596cf13f042029ca22f943dfedb
     </div>
     <!-- End Landding Banner -->
   </section>
 
   <section id="about" class="w-full flex m-10">
     <!--Start About Section -->
-<<<<<<< HEAD
     <div class="about_subtitle bg-about_background m-10 p-16 w-7/12">
-=======
-    <div class="about_subtitle bg-about_background p-10 w-7/12">
->>>>>>> f7760ed80ca3e596cf13f042029ca22f943dfedb
       <!--Start title -->
       <div class="about_title flex flex-row mb-4">
         <img src="@/assets/subtitle_icon.svg" alt="" />
@@ -113,11 +79,7 @@
       <!--End point part -->
     </div>
     <!--End About Subtitle-->
-<<<<<<< HEAD
     <div class="about_video flex flex-row relative">
-=======
-    <div class="about_video flex flex-row relative ml-10">
->>>>>>> f7760ed80ca3e596cf13f042029ca22f943dfedb
       <img src="@/assets/about_img.svg" alt="" />
       <a href="http://youtube.com" target="_blank" rel="noopener noreferrer"
         ><img class="absolute inset-1/3" src="@\assets\video_icon.svg" alt=""
@@ -125,104 +87,10 @@
     </div>
     <!--End About Section -->
   </section>
-<<<<<<< HEAD
 </template>
 <script>
 // @ is an alias to /src
 
-=======
-
-  <section id="why_choose" class="w-full">
-    <div class="properties m-10">
-      <!--Start title -->
-      <div
-        class="properties_title flex flex-row mb-4 items-center justify-center"
-      >
-        <img src="@/assets/subtitle_icon.svg" alt="" />
-        <h3><span>03</span> Why Choose</h3>
-        <img src="@/assets/subtitle_icon.svg" alt="" />
-      </div>
-      <div class="property_title mb-4 flex flex-row justify-center">
-        <h1 class="text-center mb-4">
-          Why Choose Our Properties Of Real Estate Industries
-        </h1>
-      </div>
-      <!--End title -->
-      <div class="properties_cards">
-        <div id="row1" class="row1 flex flex-row mb-4 justify-around gap-9">
-          <div class="item p-5">
-            <img class="mb-4" src="@/assets/why_choose_Icon.svg" alt="" />
-            <div class="content">
-              <h1 class="mb-4">Budget Friendly</h1>
-              <p>
-                Distinctively re-engineer revolutionary meta-services and
-                premium At vero eos et accusamus et iusto odio dignissimos
-                ducimus qui blanditiis
-              </p>
-            </div>
-          </div>
-          <div class="item_big flex flex-row justify-center p-5">
-            <img src="@/assets/why_choose_icon1.svg" alt="" />
-            <div class="content flex flex-col pt-32">
-              <h1 class="mb-4">Property Insurance</h1>
-              <p>
-                Distinctively re-engineer revolutionary meta-services and
-                premium At vero eos et accusamus et iusto odio dignissimos
-                ducimus qui blanditiis
-                <br />
-                <br />
-                Distinctively re-engineer revolutionary meta-services and
-                premium
-              </p>
-            </div>
-          </div>
-        </div>
-        <div id="row2" class="row2 flex flex-row mb-4 jusitfy-around gap-10">
-          <div class="item_bg p-5">
-            <img class="mb-4" src="@/assets/why_choose_icon2.svg" alt="" />
-            <div class="content">
-              <h1 class="mb-4">Trusted By Thousands</h1>
-              <p class="mb-4">
-                Distinctively re-engineer revolutionary meta-services and
-                premium At vero eos et accusamus et iusto odio dignissimos
-                ducimus qui blanditiis
-              </p>
-            </div>
-          </div>
-          <div class="item p-5">
-            <img
-              class="mb-4 mt-10"
-              src="@/assets/why_choose_icon3.svg"
-              alt=""
-            />
-            <div class="content mt-10">
-              <h1 class="mb-4">Prime Location</h1>
-              <p>
-                Distinctively re-engineer revolutionary meta-services and
-                premium At vero eos et accusamus et iusto odio dignissimos
-                ducimus qui blanditiis
-              </p>
-            </div>
-          </div>
-          <div class="item p-5">
-            <img class="mb-4" src="@/assets/why_choose_icon4.svg" alt="" />
-            <div class="content">
-              <h1 class="mb-4">Lowest Commission</h1>
-              <p>
-                Distinctively re-engineer revolutionary meta-services and
-                premium At vero eos et accusamus et iusto odio dignissimos
-                ducimus qui blanditiis
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section></section>
-</template>
-<script>
->>>>>>> f7760ed80ca3e596cf13f042029ca22f943dfedb
 export default {
   name: "HomeView",
   components: {},
@@ -234,7 +102,6 @@ body {
   margin: 0;
 }
 //Start Landding Banner
-<<<<<<< HEAD
 .banner {
   .parent {
     background-image: url("../assets/Background-1.jpg");
@@ -264,53 +131,6 @@ body {
         font-size: 15px;
         color: var(--Border_Color);
       }
-=======
-.home {
-  background: url(/src/assets/Background-1.jpg) no-repeat center;
-  background-size: cover;
-  height: fit-content;
-  #title {
-    background: linear-gradient(
-      270deg,
-      #f3d1c1 -3.75%,
-      rgba(255, 178, 141, 0) 108.58%
-    );
-    line-height: 23.7px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 17px;
-    font-family: kufam;
-    color: var(--Border_Color);
-  }
-  .text {
-    h1 {
-      font-family: Kufam;
-      font-size: 55px;
-      font-weight: 700;
-      line-height: 77.02px;
-      text-align: left;
-      color: var(--Primary_Color);
-    }
-    p {
-      font-family: Source Sans 3;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 23.7px;
-      text-align: left;
-      color: var(--Border_Color);
-    }
-    button {
-      padding: 24px 30px;
-      border-radius: 5px;
-      font-family: "Kufam";
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 23.7px;
-      text-align: center;
-      border: none;
-      color: var(--Primary_Color);
-      background-color: white;
->>>>>>> f7760ed80ca3e596cf13f042029ca22f943dfedb
     }
   }
 }
@@ -321,10 +141,6 @@ body {
 
 .about_subtitle {
   height: 449px;
-<<<<<<< HEAD
-=======
-  max-height: fit-content;
->>>>>>> f7760ed80ca3e596cf13f042029ca22f943dfedb
   .about_title {
     h3 {
       font-family: Source Sans 3;
@@ -357,12 +173,9 @@ body {
   }
   .points {
     color: var(--Text_Color);
-<<<<<<< HEAD
   }
   .about_video {
     height: 449px;
-=======
->>>>>>> f7760ed80ca3e596cf13f042029ca22f943dfedb
   }
 }
 // End about section
@@ -546,7 +359,6 @@ body {
 }
 @media screen and (max-width: 900px) {
   #about {
-<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -558,19 +370,6 @@ body {
   }
   .details {
     max-width: 100%;
-=======
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: space-around !important;
-    .about_subtitle {
-      margin: 0;
-      width: 100% !important;
-    }
-  }
-  .details {
-    max-width: 100% !important;
->>>>>>> f7760ed80ca3e596cf13f042029ca22f943dfedb
   }
 }
 </style>
