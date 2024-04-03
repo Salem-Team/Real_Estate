@@ -1148,7 +1148,7 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .sec_1 {
   background: linear-gradient(106.98deg, #fff6f2 16.78%, #eec1ac 101.94%);
 }
