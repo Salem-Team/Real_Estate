@@ -157,7 +157,51 @@
       </div>
     </div>
   </section>
-  <section></section>
+  <section id="numbers">
+    <div class="container m-10 w-11/12">
+      <div class="flex flex-row items-center justify-center my-10">
+        <div class="w-full text-center">
+          <span class="number"> 56,180 </span>
+          <br />
+          <span class="text"> In property sales </span>
+        </div>
+        <div class="w-full text-center">
+          <span class="number"> 99% </span>
+          <br />
+          <span class="text"> Customer satisfaction </span>
+        </div>
+        <div class="w-full text-center">
+          <span class="number"> 25K+ </span>
+          <br />
+          <span class="text"> Property Transaction </span>
+        </div>
+        <div class="w-full text-center">
+          <span class="number"> 2,918 </span>
+          <br />
+          <span class="text"> Price Reduce </span>
+        </div>
+      </div>
+      <hr />
+    </div>
+  </section>
+
+  <section id="content">
+    <div class="container m-10">
+      <div class="content_detailes text-center p-10">
+        <h1 class="mb-10">More than 50+ Brands Trusted World Wide</h1>
+        <img src="@\assets\Content-icons.svg" alt="" />
+        <button
+          type="submit"
+          class="flex flex-row gap-1 mt-10 justify-center mx-auto bg-white"
+        >
+          Explore Property
+          <span
+            ><img class="relative top-1" src="@/assets/home_arrow.svg" alt=""
+          /></span>
+        </button>
+      </div>
+    </div>
+  </section>
 </template>
 <script>
 export default {
@@ -169,6 +213,7 @@ export default {
 body {
   padding: 0;
   margin: 0;
+  width: 1399px !important;
 }
 //Start Landding Banner
 .home {
@@ -326,6 +371,53 @@ body {
     p {
       font-family: Source Sans 3;
       color: var(--Border_Color);
+    }
+  }
+}
+
+#numbers {
+  .number {
+    font-family: Kufam;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53.32px;
+    text-align: center;
+    color: var(--Primary_Color);
+  }
+  .text {
+    font-family: Source Sans 3;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.7px;
+    text-align: center;
+    color: var(--Border_Color);
+  }
+  hr {
+    color: #e4e4e4;
+  }
+}
+
+#content {
+  .content_detailes {
+    width: 1199px;
+    background: #f5f1ef;
+    h1 {
+      font-family: Kufam;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 29.62px;
+      text-align: center;
+    }
+    button {
+      padding: 24px 30px;
+      border-radius: 5px;
+      font-family: "Kufam";
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 23.7px;
+      text-align: center;
+      border: none;
+      color: var(--Primary_Color);
     }
   }
 }
