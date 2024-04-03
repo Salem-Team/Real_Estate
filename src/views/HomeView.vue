@@ -185,9 +185,9 @@
     </div>
   </section>
 
-  <section id="content">
+  <section id="client">
     <div class="container m-10">
-      <div class="content_detailes text-center p-10">
+      <div class="client_detailes text-center p-10">
         <h1 class="mb-10">More than 50+ Brands Trusted World Wide</h1>
         <img src="@\assets\Content-icons.svg" alt="" />
         <button
@@ -397,8 +397,8 @@ body {
   }
 }
 
-#content {
-  .content_detailes {
+#client {
+  .client_detailes {
     width: 1199px;
     background: #f5f1ef;
     h1 {
