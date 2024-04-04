@@ -77,7 +77,7 @@
         class="properties_title flex flex-row mb-4 items-center justify-center"
       >
         <img src="@/assets/subtitle_icon.svg" alt="" />
-        <h3><span>03</span> Why Choose</h3>
+        <h3 class="uppercase"><span>03</span> Why Choose</h3>
         <img src="@/assets/subtitle_icon.svg" alt="" />
       </div>
       <div class="property_title mb-4 flex flex-row justify-center">
@@ -185,11 +185,82 @@
     </div>
   </section>
 
+  <section id="neighborhoods">
+    <div
+      class="neighborhoods_title flex flex-row mb-4 text-center items-center justify-center"
+    >
+      <img src="@/assets/subtitle_icon.svg" alt="" />
+      <h3 class="uppercase"><span>06</span> Neighborhoods</h3>
+      <img src="@/assets/subtitle_icon.svg" alt="" />
+    </div>
+    <div class="neighborhoods_detailes text-center">
+      <h1 class="mb-10">Discover The Neighborhoods</h1>
+      <div class="neighborhoods_card m-10 flex flex-row gap-5">
+        <div class="neighborhoods_image relative">
+          <span>
+            <img src="@/assets/Neighborhoods_Image1.svg" alt="" />
+            <img
+              class="absolute left-56 top-5"
+              src="@/assets/Neighborhoods_arrow.svg"
+              alt=""
+            />
+            <div class="text absolute bottom-10 left-5">
+              <h1>New York</h1>
+              <p>250 Property</p>
+            </div>
+          </span>
+        </div>
+        <div class="neighborhoods_image relative">
+          <span>
+            <img src="@/assets/Neighborhoods_Image2.svg" alt="" />
+            <img
+              class="absolute left-56 top-5"
+              src="@/assets/Neighborhoods_arrow.svg"
+              alt=""
+            />
+            <div class="text absolute bottom-10 left-5">
+              <h1>Atlanta</h1>
+              <p>120 Property</p>
+            </div>
+          </span>
+        </div>
+        <div class="neighborhoods_image relative">
+          <span>
+            <img src="@/assets/Neighborhoods_Image3.svg" alt="" />
+            <img
+              class="absolute left-56 top-5"
+              src="@/assets/Neighborhoods_arrow.svg"
+              alt=""
+            />
+            <div class="text absolute bottom-10 left-5">
+              <h1>Singapore</h1>
+              <p>53Property</p>
+            </div>
+          </span>
+        </div>
+        <div class="neighborhoods_image relative">
+          <span>
+            <img src="@/assets/Neighborhoods_Image4.svg" alt="" />
+            <img
+              class="absolute left-56 top-5"
+              src="@/assets/Neighborhoods_arrow.svg"
+              alt=""
+            />
+            <div class="text absolute bottom-10 left-5">
+              <h1>Paris</h1>
+              <p>99 Property</p>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="client">
     <div class="container m-10">
       <div class="client_detailes text-center p-10">
         <h1 class="mb-10">More than 50+ Brands Trusted World Wide</h1>
-        <img src="@\assets\Content.svg" alt="" />
+        <img src="@\assets\Content-icons.svg" alt="" />
         <button
           type="submit"
           class="flex flex-row gap-1 mt-10 justify-center mx-auto bg-white"
@@ -197,6 +268,48 @@
           Explore Property
           <span
             ><img class="relative top-1" src="@/assets/home_arrow.svg" alt=""
+          /></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="container p-32">
+      <div
+        class="blog_title flex flex-row mb-4 text-center items-center justify-center"
+      >
+        <img src="@/assets/subtitle_icon.svg" alt="" />
+        <h3 class="uppercase"><span>06</span> Blog</h3>
+        <img src="@/assets/subtitle_icon.svg" alt="" />
+      </div>
+      <div class="blog_detailes text-center">
+        <h1 class="mb-10">Discover The Neighborhoods</h1>
+        <div class="blog_card mb-20">
+          <div class="image">
+            <img class="mx-auto" src="@\assets\blog-Image1.svg" alt="" />
+          </div>
+          <div class="content mt-10">
+            <h2 class="mb-5">November 05, 2021 | Architecture</h2>
+            <p>Here’s how to decorate your new home from scratch</p>
+          </div>
+        </div>
+        <div class="blog_card">
+          <div class="image">
+            <img class="mx-auto mb-10" src="@\assets\blog_Image2.svg" alt="" />
+          </div>
+          <div class="content mt-10">
+            <h2 class="mb-5">December 14, 2021 | Market Manager</h2>
+            <p>Home buying basics: How many Kitchans and bedrooms?</p>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="flex flex-row gap-1 mt-20 justify-center mx-auto bg-white"
+        >
+          Explore Property
+          <span
+            ><img class="relative top-1" src="@/assets/dark_arrow.svg" alt=""
           /></span>
         </button>
       </div>
@@ -213,7 +326,9 @@ export default {
 body {
   padding: 0;
   margin: 0;
-  width: 1399px !important;
+  width: 100% !important;
+  height: 100vh;
+  overflow-x: hidden !important;
 }
 //Start Landding Banner
 .home {
@@ -398,6 +513,53 @@ body {
   }
 }
 
+#neighborhoods {
+  .neighborhoods_title {
+    h3 {
+      font-family: Source Sans 3;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 38.5px;
+      letter-spacing: 0.3em;
+      color: var(--Primary_Color);
+      span {
+        color: var(--Secondary_Color);
+      }
+    }
+  }
+  .neighborhoods_detailes {
+    max-height: fit-content;
+    max-width: 100%;
+    h1 {
+      font-family: Kufam;
+      font-size: 45px;
+      font-weight: 700;
+      line-height: 53.32px;
+      color: var(--Primary_Color);
+    }
+  }
+  .neighborhoods_image {
+    span {
+      h1 {
+        font-family: Kufam;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 29.62px;
+        text-align: left;
+        color: white;
+      }
+      p {
+        font-family: Source Sans 3;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 23.7px;
+        text-align: left;
+        color: var(--Secondary_Color);
+      }
+    }
+  }
+}
+
 #client {
   .client_detailes {
     width: 1199px;
@@ -408,6 +570,63 @@ body {
       font-weight: 600;
       line-height: 29.62px;
       text-align: center;
+    }
+    button {
+      padding: 24px 30px;
+      border-radius: 5px;
+      font-family: "Kufam";
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 23.7px;
+      text-align: center;
+      border: none;
+      color: var(--Primary_Color);
+    }
+  }
+}
+
+#blog {
+  .container {
+    background: url(/src/assets/blog_Background.svg) no-repeat right top / cover;
+    .blog_title {
+      h3 {
+        font-family: Source Sans 3;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 38.5px;
+        letter-spacing: 0.3em;
+        color: var(--Primary_Color);
+        span {
+          color: var(--Secondary_Color);
+        }
+      }
+    }
+    .blog_detailes {
+      max-height: fit-content;
+      max-width: 100%;
+      h1 {
+        font-family: Kufam;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 53.32px;
+        color: var(--Primary_Color);
+      }
+    }
+    .blog_card {
+      h2 {
+        font-family: Source Sans 3;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23.7px;
+        color: var(--Border_Color);
+      }
+      p {
+        color: var(--Primary_Color);
+        font-family: Kufam;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 35.55px;
+      }
     }
     button {
       padding: 24px 30px;

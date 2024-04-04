@@ -238,6 +238,7 @@
                     </v-list>
                   </v-menu>
                 </div>
+<<<<<<< HEAD
                 <router-link
                   :to="{
                     name: 'blog-view',
@@ -245,6 +246,9 @@
                   style="color: white; text-decoration: none"
                   ><v-btn style="padding: 20px">Blog</v-btn></router-link
                 >
+=======
+                <v-btn @click="$router.push('/blog_view')">Blog</v-btn>
+>>>>>>> c4ec0ea4934d84a734eafde14b7db270dc54619e
               </v-btn-toggle>
             </v-toolbar-items>
             <v-btn

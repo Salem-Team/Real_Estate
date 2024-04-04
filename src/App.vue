@@ -16,7 +16,10 @@ export default {
 <style lang="scss">
 // Add Kufam Fonts
 @import url("https://fonts.googleapis.com/css2?family=Kufam:ital@0;1&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
 #app {
   font-family: "Kufam", sans-serif;
   font-optical-sizing: auto;

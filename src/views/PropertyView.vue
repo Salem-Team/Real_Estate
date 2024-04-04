@@ -1,11 +1,11 @@
 <template>
-  <section class="banner">
+  <section class="banner mb-1">
     <!-- Start Landding Banner -->
     <div class="parent">
       <v-container>
         <v-row>
-          <v-col cols="5">
-            <div class="cont d-flex flex-column text-left mt-24">
+          <v-col cols="5" class="mt-64 mb-4">
+            <div class="cont d-flex flex-column text-left">
               <h4 class="flex flex-row gap-1 p-1">
                 <span><img src="@/assets/home_icon.svg" alt="" /></span
                 >properties
@@ -16,7 +16,7 @@
           <v-col cols="7">
             <div class="parent_img relative">
               <img
-                class="w-full h-fit absolute"
+                class="w-full h-fit absolute top-5"
                 src="@/assets/property_img.svg"
                 alt=""
                 style="left: 118px"
@@ -28,11 +28,15 @@
     </div>
     <!-- End Landding Banner -->
   </section>
+  <section>
+    <prop-coun />
+  </section>
 </template>
 <script>
+import PropCoun from "@/components/PropCoun.vue";
 export default {
   name: "property_view",
-  components: {},
+  components: { PropCoun },
 };
 </script>
 <style lang="scss" scoped>
@@ -45,7 +49,6 @@ body {
   .parent {
     background-image: url("../assets/Background-1.jpg");
     background-size: cover;
-    height: 73vh;
     overflow: hidden;
     .cont {
       h4 {

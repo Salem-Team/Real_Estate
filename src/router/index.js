@@ -41,8 +41,8 @@ const routes = [
     component: BlogSingle,
   },
   {
-    path: "/blog-view",
-    name: "blog-view",
+    path: "/blog_view",
+    name: "blog_view",
     component: BlogView,
   },
   {
