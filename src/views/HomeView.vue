@@ -250,11 +250,9 @@
   </section>
 </template>
 <script>
-import Discover from "@/components/DiscoverCoun.vue";
-
 export default {
   name: "HomeView",
-  components: { Discover },
+  components: { },
 };
 </script>
 <style lang="scss" scoped>
