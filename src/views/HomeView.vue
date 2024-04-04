@@ -185,9 +185,76 @@
     </div>
   </section>
 
-  <!-- start Discover -->
-  <Discover />
-  <!-- end Discover -->
+  <section id="neighborhoods">
+    <div
+      class="neighborhoods_title flex flex-row mb-4 text-center items-center justify-center"
+    >
+      <img src="@/assets/subtitle_icon.svg" alt="" />
+      <h3 class="uppercase"><span>06</span> Neighborhoods</h3>
+      <img src="@/assets/subtitle_icon.svg" alt="" />
+    </div>
+    <div class="neighborhoods_detailes text-center">
+      <h1 class="mb-10">Discover The Neighborhoods</h1>
+      <div class="neighborhoods_card m-10 flex flex-row gap-5">
+        <div class="neighborhoods_image relative">
+          <span>
+            <img src="@/assets/Neighborhoods_Image1.svg" alt="" />
+            <img
+              class="absolute left-56 top-5"
+              src="@/assets/Neighborhoods_arrow.svg"
+              alt=""
+            />
+            <div class="text absolute bottom-10 left-5">
+              <h1>New York</h1>
+              <p>250 Property</p>
+            </div>
+          </span>
+        </div>
+        <div class="neighborhoods_image relative">
+          <span>
+            <img src="@/assets/Neighborhoods_Image2.svg" alt="" />
+            <img
+              class="absolute left-56 top-5"
+              src="@/assets/Neighborhoods_arrow.svg"
+              alt=""
+            />
+            <div class="text absolute bottom-10 left-5">
+              <h1>Atlanta</h1>
+              <p>120 Property</p>
+            </div>
+          </span>
+        </div>
+        <div class="neighborhoods_image relative">
+          <span>
+            <img src="@/assets/Neighborhoods_Image3.svg" alt="" />
+            <img
+              class="absolute left-56 top-5"
+              src="@/assets/Neighborhoods_arrow.svg"
+              alt=""
+            />
+            <div class="text absolute bottom-10 left-5">
+              <h1>Singapore</h1>
+              <p>53Property</p>
+            </div>
+          </span>
+        </div>
+        <div class="neighborhoods_image relative">
+          <span>
+            <img src="@/assets/Neighborhoods_Image4.svg" alt="" />
+            <img
+              class="absolute left-56 top-5"
+              src="@/assets/Neighborhoods_arrow.svg"
+              alt=""
+            />
+            <div class="text absolute bottom-10 left-5">
+              <h1>Paris</h1>
+              <p>99 Property</p>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="client">
     <div class="container m-10">
@@ -252,7 +319,7 @@
 <script>
 export default {
   name: "HomeView",
-  components: { },
+  components: {},
 };
 </script>
 <style lang="scss" scoped>
