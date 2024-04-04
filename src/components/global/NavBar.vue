@@ -111,7 +111,7 @@
                       </v-list>
                     </v-menu>
                   </div>
-                  <v-btn>Blog</v-btn>
+                  <v-btn @click="$router.push('/blog_view')">Blog</v-btn>
                 </v-btn-toggle>
               </v-toolbar-items>
             </v-col>
