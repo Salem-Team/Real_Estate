@@ -1,38 +1,34 @@
 <template>
-  <section class="banner">
-    <!-- Start Landding Banner -->
-    <div class="parent">
-      <v-container>
-        <v-row>
-          <v-col cols="5">
-            <div class="cont d-flex flex-column text-left mt-24">
-              <h4 class="flex flex-row gap-1 p-1">
-                <span><img src="@/assets/home_icon.svg" alt="" /></span>ABOUT
-                PROPERLAND
-              </h4>
-              <h1 class="title">About Our Real Estate</h1>
-            </div>
-          </v-col>
-          <v-col cols="7">
-            <div class="parent_img relative">
-              <img
-                class="w-full h-fit absolute"
-                src="@/assets/about_properland.svg"
-                alt=""
-                style="left: 118px"
-              />
-            </div>
-          </v-col>
-        </v-row>
-      </v-container>
+  <section class="banner mb-1">
+  
+  </section>
+  <section>
+    <prop-coun />
+  </section>
+
+  <section id="client">
+    <div class="container m-10">
+      <div class="client_detailes text-center p-10">
+        <h1 class="mb-10">More than 50+ Brands Trusted World Wide</h1>
+        <img src="@\assets\Content-icons.svg" alt="" />
+        <button
+          type="submit"
+          class="flex flex-row gap-1 mt-10 justify-center mx-auto bg-white"
+        >
+          Explore Property
+          <span
+            ><img class="relative top-1" src="@/assets/home_arrow.svg" alt=""
+          /></span>
+        </button>
+      </div>
     </div>
-    <!-- End Landding Banner -->
   </section>
 </template>
 <script>
+import PropCoun from "@/components/PropCoun.vue";
 export default {
   name: "about-view",
-  components: {},
+  components: { PropCoun },
 };
 </script>
 <style lang="scss" scoped>
@@ -45,7 +41,6 @@ body {
   .parent {
     background-image: url("../assets/Background-1.jpg");
     background-size: cover;
-    height: 73vh;
     overflow: hidden;
     .cont {
       h4 {
@@ -74,4 +69,46 @@ body {
 }
 
 //End Landding Banner
+
+#client {
+  .client_detailes {
+    width: 1199px;
+    background: #f5f1ef;
+    h1 {
+      font-family: Kufam;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 29.62px;
+      text-align: center;
+    }
+    button {
+      padding: 24px 30px;
+      border-radius: 5px;
+      font-family: "Kufam";
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 23.7px;
+      text-align: center;
+      border: none;
+      color: var(--Primary_Color);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #client {
+    width: 100% !important;
+    .container {
+      .client_detailes {
+        width: 100% !important;
+        h1 {
+          margin-left: 0 !important;
+        }
+        img {
+          width: 90% !important;
+        }
+      }
+    }
+  }
+}
 </style>
