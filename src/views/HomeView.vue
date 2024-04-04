@@ -260,7 +260,7 @@
     <div class="container m-10">
       <div class="client_detailes text-center p-10">
         <h1 class="mb-10">More than 50+ Brands Trusted World Wide</h1>
-        <img src="@\assets\Content.svg" alt="" />
+        <img src="@\assets\Content-icons.svg" alt="" />
         <button
           type="submit"
           class="flex flex-row gap-1 mt-10 justify-center mx-auto bg-white"
