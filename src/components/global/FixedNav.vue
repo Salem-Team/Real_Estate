@@ -139,8 +139,6 @@ export default {
 </style>
 <style lang="scss">
 @media (max-width: 1300px) {
-  .app_par_con {
-  }
 }
 @media (max-width: 800px) {
   .app_par_con {
