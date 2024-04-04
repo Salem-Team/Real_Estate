@@ -1,7 +1,4 @@
 <template>
-<<<<<<< HEAD
-  <div style="height: 100vh"></div>
-=======
   <div class="Blog_view">
     <v-container fluid class="pa-0 ma-0">
       <v-row>
@@ -919,7 +916,7 @@
       </v-container>
     </v-container>
   </div>
->>>>>>> c4ec0ea4934d84a734eafde14b7db270dc54619e
+  >>>>>>> c4ec0ea4934d84a734eafde14b7db270dc54619e
 </template>
 <script>
 export default {
