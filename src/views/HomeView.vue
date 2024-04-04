@@ -30,11 +30,11 @@
     <!-- End Landding Banner -->
   </section>
 
-  <section id="about" class="w-full flex mx-10 my-20">
+  <section id="about" class="w-full flex mx-10 my-20 gap-10">
     <!--Start About Section -->
     <div class="about_subtitle bg-about_background p-10 w-7/12">
       <!--Start title -->
-      <div class="about_title flex flex-row mb-4">
+      <div class="about_title flex flex-row justify-center mb-4">
         <img src="@/assets/subtitle_icon.svg" alt="" />
         <h3><span>01</span> PROPERLAND INTRO</h3>
         <img src="@/assets/subtitle_icon.svg" alt="" />
@@ -50,7 +50,7 @@
         </p>
       </div>
       <!--Start point part -->
-      <div class="points flex flex-row gap-1">
+      <div class="points flex flex-row justify-around gap-1">
         <img src="@/assets/points.svg" alt="" />
         <span>Only pay when you publish</span>
         <img src="@/assets/points.svg" alt="" />
@@ -61,7 +61,7 @@
       <!--End point part -->
     </div>
     <!--End About Subtitle-->
-    <div class="about_video flex flex-row relative ml-10">
+    <div class="about_video flex flex-row relative justify-center">
       <img src="@/assets/about_img.svg" alt="" />
       <a href="http://youtube.com" target="_blank" rel="noopener noreferrer"
         ><img class="absolute inset-1/3" src="@\assets\video_icon.svg" alt=""
@@ -708,6 +708,18 @@ body {
       font-size: 20px !important; /* Adjust font size for smaller screens */
     }
   }
+  #numbers {
+    .container {
+      margin: 0 !important;
+      width: 100% !important;
+      div {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: space-around !important;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -766,6 +778,31 @@ body {
   }
   .details {
     max-width: 100% !important;
+  }
+  #neighborhoods {
+    .neighborhoods_card {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: space-around !important;
+      width: 100% !important;
+      margin: 0 !important;
+    }
+  }
+
+  #client {
+    width: 100% !important;
+    .container {
+      .client_detailes {
+        width: 100% !important;
+        h1 {
+          margin-left: 0 !important;
+        }
+        img {
+          width: 90% !important;
+        }
+      }
+    }
   }
 }
 </style>
