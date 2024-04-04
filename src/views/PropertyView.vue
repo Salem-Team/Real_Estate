@@ -29,14 +29,18 @@
     <!-- End Landding Banner -->
   </section>
   <section>
-    <prop-coun />
+    <PropertiesCoun />
+  </section>
+  <section>
+    <Discover />
   </section>
 </template>
 <script>
-import PropCoun from "@/components/PropCoun.vue";
+import Discover from "@/components/DiscoverCoun.vue";
+import PropertiesCoun from "@/components/PropertiesCoun.vue";
 export default {
   name: "property_view",
-  components: { PropCoun },
+  components: { Discover, PropertiesCoun },
 };
 </script>
 <style lang="scss" scoped>
