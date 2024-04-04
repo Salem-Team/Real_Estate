@@ -71,9 +71,27 @@
           >
             <v-toolbar-items class="mt-4">
               <v-btn-toggle v-model="toggle_exclusive">
-                <v-btn>home</v-btn>
-                <v-btn>about</v-btn>
-                <v-btn> Properties </v-btn>
+                <router-link
+                  :to="{
+                    name: 'home-view',
+                  }"
+                  style="color: white; text-decoration: none"
+                  ><v-btn style="padding: 20px">Home</v-btn></router-link
+                >
+                <router-link
+                  :to="{
+                    name: 'about-view',
+                  }"
+                  style="color: white; text-decoration: none"
+                  ><v-btn style="padding: 20px">about</v-btn></router-link
+                >
+                <router-link
+                  :to="{
+                    name: 'property-view',
+                  }"
+                  style="color: white; text-decoration: none"
+                  ><v-btn style="padding: 20px">Properties</v-btn></router-link
+                >
                 <div class="d-flex justify-space-around">
                   <v-menu>
                     <template v-slot:activator="{ props }">
@@ -97,29 +115,136 @@
                       ></v-btn>
                     </template>
                     <v-list>
-                      <v-list-item
-                        v-for="(item, index) in items"
-                        :key="index"
-                        :value="index"
-                      >
-                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                      <v-list-item>
+                        <v-list-item-title
+                          ><router-link
+                            :to="{
+                              name: 'error-page',
+                            }"
+                            style="color: white; text-decoration: none"
+                            ><v-btn style="width: 100%"
+                              >Error</v-btn
+                            ></router-link
+                          ></v-list-item-title
+                        >
+                        <v-list-item-title
+                          ><router-link
+                            :to="{
+                              name: 'contact-us',
+                            }"
+                            style="color: white; text-decoration: none"
+                            ><v-btn style="width: 100%"
+                              >contact us</v-btn
+                            ></router-link
+                          ></v-list-item-title
+                        >
+                        <v-list-item-title
+                          ><router-link
+                            :to="{
+                              name: 'pass-view',
+                            }"
+                            style="color: white; text-decoration: none"
+                            ><v-btn style="width: 100%"
+                              >password</v-btn
+                            ></router-link
+                          ></v-list-item-title
+                        >
+                        <v-list-item-title
+                          ><router-link
+                            :to="{
+                              name: 'property-single',
+                            }"
+                            style="color: white; text-decoration: none"
+                            ><v-btn style="width: 100%"
+                              >property</v-btn
+                            ></router-link
+                          ></v-list-item-title
+                        >
+                        <v-list-item-title
+                          ><router-link
+                            :to="{
+                              name: 'agent-view',
+                            }"
+                            style="color: white; text-decoration: none"
+                            ><v-btn style="width: 100%"
+                              >Agent</v-btn
+                            ></router-link
+                          ></v-list-item-title
+                        >
+                        <v-list-item-title
+                          ><router-link
+                            :to="{
+                              name: 'agent-details',
+                            }"
+                            style="color: white; text-decoration: none"
+                            ><v-btn style="width: 100%"
+                              >AgentDetails</v-btn
+                            ></router-link
+                          ></v-list-item-title
+                        >
+                        <v-list-item-title
+                          ><router-link
+                            :to="{
+                              name: 'blog-single',
+                            }"
+                            style="color: white; text-decoration: none"
+                            ><v-btn style="width: 100%"
+                              >Blog single</v-btn
+                            ></router-link
+                          ></v-list-item-title
+                        >
+                        <v-list-item-title
+                          ><router-link
+                            :to="{
+                              name: 'change-log',
+                            }"
+                            style="color: white; text-decoration: none"
+                            ><v-btn style="width: 100%"
+                              >change log</v-btn
+                            ></router-link
+                          ></v-list-item-title
+                        >
+                        <v-list-item-title
+                          ><router-link
+                            :to="{
+                              name: 'licen-view',
+                            }"
+                            style="color: white; text-decoration: none"
+                            ><v-btn style="width: 100%"
+                              >licenses</v-btn
+                            ></router-link
+                          ></v-list-item-title
+                        >
+                        <v-list-item-title
+                          ><router-link
+                            :to="{
+                              name: 'services-view',
+                            }"
+                            style="color: white; text-decoration: none"
+                            ><v-btn style="width: 100%"
+                              >services</v-btn
+                            ></router-link
+                          ></v-list-item-title
+                        >
                       </v-list-item>
                     </v-list>
                   </v-menu>
 
                   <v-menu activator="#menu-activator">
                     <v-list>
-                      <v-list-item
-                        v-for="(item, index) in items"
-                        :key="index"
-                        :value="index"
-                      >
-                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                      <v-list-item>
+                        <v-list-item-title></v-list-item-title>
                       </v-list-item>
                     </v-list>
                   </v-menu>
                 </div>
-                <v-btn @click="$router.push('/blog_view')">Blog</v-btn>
+                <router-link
+                  :to="{
+                    name: 'blog-view',
+                  }"
+                  style="color: white; text-decoration: none"
+                  ><v-btn style="padding: 20px">Blog</v-btn></router-link
+                >
               </v-btn-toggle>
             </v-toolbar-items>
             <v-btn
