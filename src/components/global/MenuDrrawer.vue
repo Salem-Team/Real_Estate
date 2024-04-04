@@ -17,24 +17,44 @@
         <v-list>
           <v-list-item class="px-0">
             <v-list-item-title class="nav-link"
-              ><a href="#">home</a></v-list-item-title
+              ><router-link
+                :to="{
+                  name: 'home-view',
+                }"
+                style="text-decoration: none"
+                >Home</router-link
+              ></v-list-item-title
             > </v-list-item
           ><v-list-item class="px-0">
             <v-list-item-title class="nav-link"
-              ><a href="#">about</a></v-list-item-title
+              ><router-link
+                :to="{
+                  name: 'about-view',
+                }"
+                style="text-decoration: none"
+                >about</router-link
+              ></v-list-item-title
             > </v-list-item
           ><v-list-item class="px-0">
             <v-list-item-title class="nav-link"
-              ><a href="#">Properties</a></v-list-item-title
+              ><router-link
+                :to="{
+                  name: 'property-view',
+                }"
+                style="text-decoration: none"
+                >Properties</router-link
+              ></v-list-item-title
             >
           </v-list-item>
           <v-list-item class="px-0">
-            <v-list-item-title class="nav-link"
-              ><a href="#">Blog</a></v-list-item-title
-            > </v-list-item
-          ><v-list-item class="px-0">
-            <v-list-item-title class="nav-link"
-              ><a href="#">Contact</a></v-list-item-title
+            <v-list-item-title class="nav-link">
+              <router-link
+                :to="{
+                  name: 'blog-view',
+                }"
+                style="text-decoration: none"
+                >Blog</router-link
+              ></v-list-item-title
             >
           </v-list-item>
           <v-list-group>
@@ -48,28 +68,144 @@
                 class="d-flex align-center nav-link"
                 style="gap: 7px"
               >
-                Click Me</v-list-item-title
+                <router-link
+                  :to="{
+                    name: 'error-page',
+                  }"
+                  style="text-decoration: none"
+                  >Error</router-link
+                ></v-list-item-title
               > </v-list-item
             ><v-list-item>
               <v-list-item-title
                 class="d-flex align-center nav-link"
                 style="gap: 7px"
               >
-                Click Me</v-list-item-title
+                <router-link
+                  :to="{
+                    name: 'contact-us',
+                  }"
+                  style="text-decoration: none"
+                  >contact us</router-link
+                ></v-list-item-title
               > </v-list-item
             ><v-list-item>
               <v-list-item-title
                 class="d-flex align-center nav-link"
                 style="gap: 7px"
               >
-                Click Me</v-list-item-title
+                <router-link
+                  :to="{
+                    name: 'pass-view',
+                  }"
+                  style="text-decoration: none"
+                >
+                  password</router-link
+                ></v-list-item-title
               > </v-list-item
             ><v-list-item>
               <v-list-item-title
                 class="d-flex align-center nav-link"
                 style="gap: 7px"
               >
-                Click Me</v-list-item-title
+                <router-link
+                  :to="{
+                    name: 'property-single',
+                  }"
+                  style="text-decoration: none"
+                  >property</router-link
+                ></v-list-item-title
+              > </v-list-item
+            ><v-list-item>
+              <v-list-item-title
+                class="d-flex align-center nav-link"
+                style="gap: 7px"
+              >
+                <router-link
+                  :to="{
+                    name: 'agent-view',
+                  }"
+                  style="text-decoration: none"
+                  >Agent</router-link
+                ></v-list-item-title
+              > </v-list-item
+            ><v-list-item>
+              <v-list-item-title
+                class="d-flex align-center nav-link"
+                style="gap: 7px"
+              >
+                <router-link
+                  :to="{
+                    name: 'agent-details',
+                  }"
+                  style="text-decoration: none"
+                  >AgentDetails</router-link
+                ></v-list-item-title
+              > </v-list-item
+            ><v-list-item>
+              <v-list-item-title
+                class="d-flex align-center nav-link"
+                style="gap: 7px"
+              >
+                <router-link
+                  :to="{
+                    name: 'blog-single',
+                  }"
+                  style="text-decoration: none"
+                  >Blog single</router-link
+                ></v-list-item-title
+              > </v-list-item
+            ><v-list-item>
+              <v-list-item-title
+                class="d-flex align-center nav-link"
+                style="gap: 7px"
+              >
+                <router-link
+                  :to="{
+                    name: 'blog-single',
+                  }"
+                  style="text-decoration: none"
+                  >Blog single</router-link
+                ></v-list-item-title
+              > </v-list-item
+            ><v-list-item>
+              <v-list-item-title
+                class="d-flex align-center nav-link"
+                style="gap: 7px"
+              >
+                <router-link
+                  :to="{
+                    name: 'change-log',
+                  }"
+                  style="text-decoration: none"
+                  >change log</router-link
+                ></v-list-item-title
+              > </v-list-item
+            ><v-list-item>
+              <v-list-item-title
+                class="d-flex align-center nav-link"
+                style="gap: 7px"
+              >
+                <router-link
+                  :to="{
+                    name: 'licen-view',
+                  }"
+                  style="text-decoration: none"
+                  >licenses</router-link
+                ></v-list-item-title
+              > </v-list-item
+            ><v-list-item>
+              <v-list-item-title
+                class="d-flex align-center nav-link"
+                style="gap: 7px"
+              >
+                <router-link
+                  :to="{
+                    name: 'services-view',
+                  }"
+                  style="color: white; text-decoration: none"
+                  >services</router-link
+                ></v-list-item-title
               >
             </v-list-item>
           </v-list-group>
