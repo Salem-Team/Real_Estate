@@ -36,8 +36,8 @@ const routes = [
     component: AgentView,
   },
   {
-    path: "/blog-single",
-    name: "blog-single",
+    path: "/blog_single",
+    name: "blog_single",
     component: BlogSingle,
   },
   {
@@ -81,8 +81,8 @@ const routes = [
     component: PropertyView,
   },
   {
-    path: "/services-view",
-    name: "services-view",
+    path: "/services_view",
+    name: "services_view",
     component: ServicesView,
   },
 ];
