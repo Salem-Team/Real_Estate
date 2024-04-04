@@ -31,7 +31,7 @@
 </template>
 <script>
 export default {
-  name: "about_view",
+  name: "about-view",
   components: {},
 };
 </script>

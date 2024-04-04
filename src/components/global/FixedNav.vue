@@ -2,18 +2,28 @@
   <div class="nav_bar">
     <div class="app-nav">
       <v-app-bar
-        style="padding: 10px 10px; margin-top: 70px; transform: translateX(15%)"
+        style="
+          padding: 10px 10px;
+          margin-top: 70px;
+          margin-left: 134px;
+          margin-right: 130px;
+          right: 50px;
+          top: 45px;
+          z-index: 200;
+
+          width: 75%;
+        "
         height="fit-content"
-        class="w-75"
+        class="app_par_con"
         absolute
       >
         <v-container>
           <v-row class="align-center">
             <v-col cols="8" class="text-start">
-              <div class="log w-100 h-100">
+              <div class="log">
                 <svg
-                  width="200"
-                  height="66"
+                  width="70%"
+                  height="100%"
                   viewBox="0 0 296 66"
                   style="font-size: 25px"
                   fill="none"
@@ -125,5 +135,26 @@ export default {
   position: relative;
   line-height: 50px;
   transition: all 0.3s ease;
+}
+</style>
+<style lang="scss">
+@media (max-width: 1300px) {
+  .app_par_con {
+  }
+}
+@media (max-width: 800px) {
+  .app_par_con {
+    left: -40px !important;
+  }
+}
+@media (max-width: 500px) {
+  .app_par_con {
+    left: -60px !important;
+  }
+}
+@media (max-width: 400px) {
+  .app_par_con {
+    left: -80px !important;
+  }
 }
 </style>

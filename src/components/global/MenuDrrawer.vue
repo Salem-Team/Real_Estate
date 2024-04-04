@@ -107,7 +107,7 @@ export default {
 }
 .nav-link {
   /* height: 50px; */
-  padding: 140px;
+
   height: 50px;
   display: flex;
   justify-content: center;
