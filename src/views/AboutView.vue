@@ -1,6 +1,32 @@
 <template>
   <section class="banner mb-1">
-  
+    <!-- Start Landding Banner -->
+    <div class="parent">
+      <v-container>
+        <v-row>
+          <v-col cols="5" class="mt-64 mb-4">
+            <div class="cont d-flex flex-column text-left mt-24">
+              <h4 class="flex flex-row gap-1 p-1">
+                <span><img src="@/assets/home_icon.svg" alt="" /></span>ABOUT
+                PROPERLAND
+              </h4>
+              <h1 class="title">About Our Real Estate</h1>
+            </div>
+          </v-col>
+          <v-col cols="7">
+            <div class="parent_img relative">
+              <img
+                class="w-full h-fit absolute top-44"
+                src="@/assets/about_properland.svg"
+                alt=""
+                style="left: 118px"
+              />
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+    <!-- End Landding Banner -->
   </section>
   <section>
     <prop-coun />
