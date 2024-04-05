@@ -28,22 +28,12 @@
     </div>
     <!-- End Landding Banner -->
   </section>
-<<<<<<< HEAD
   <section>
     <PropertiesCoun />
   </section>
   <section>
     <Discover />
   </section>
-</template>
-<script>
-import Discover from "@/components/DiscoverCoun.vue";
-import PropertiesCoun from "@/components/PropertiesCoun.vue";
-export default {
-  name: "property_view",
-  components: { Discover, PropertiesCoun },
-=======
-
   <section id="neighborhoods">
     <div
       class="neighborhoods_title flex flex-row mb-4 text-center items-center justify-center"
@@ -116,12 +106,13 @@ export default {
   </section>
 </template>
 <script>
+import PropertiesCoun from "@/components/PropertiesCoun.vue";
 export default {
   name: "property_view",
-  components: {},
->>>>>>> 52fb7a2c35b9bdc51fed35be060da1a581ec9a01
+  components: { PropertiesCoun },
 };
 </script>
+
 <style lang="scss" scoped>
 body {
   padding: 0;
