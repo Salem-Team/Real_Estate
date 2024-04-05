@@ -31,9 +31,6 @@
   <section>
     <PropertiesCoun />
   </section>
-  <section>
-    <Discover />
-  </section>
   <section id="neighborhoods">
     <div
       class="neighborhoods_title flex flex-row mb-4 text-center items-center justify-center"
