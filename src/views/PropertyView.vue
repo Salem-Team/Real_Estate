@@ -31,82 +31,17 @@
   <section>
     <PropertiesCoun />
   </section>
-  <section id="neighborhoods">
-    <div
-      class="neighborhoods_title flex flex-row mb-4 text-center items-center justify-center"
-    >
-      <img src="@/assets/subtitle_icon.svg" alt="" />
-      <h3 class="uppercase"><span>06</span> Neighborhoods</h3>
-      <img src="@/assets/subtitle_icon.svg" alt="" />
-    </div>
-    <div class="neighborhoods_detailes text-center">
-      <h1 class="mb-10">Discover The Neighborhoods</h1>
-      <div class="neighborhoods_card m-10 flex flex-row gap-5">
-        <div class="neighborhoods_image relative">
-          <span>
-            <img src="@/assets/Neighborhoods_Image1.svg" alt="" />
-            <img
-              class="absolute left-56 top-5"
-              src="@/assets/Neighborhoods_arrow.svg"
-              alt=""
-            />
-            <div class="text absolute bottom-10 left-5">
-              <h1>New York</h1>
-              <p>250 Property</p>
-            </div>
-          </span>
-        </div>
-        <div class="neighborhoods_image relative">
-          <span>
-            <img src="@/assets/Neighborhoods_Image2.svg" alt="" />
-            <img
-              class="absolute left-56 top-5"
-              src="@/assets/Neighborhoods_arrow.svg"
-              alt=""
-            />
-            <div class="text absolute bottom-10 left-5">
-              <h1>Atlanta</h1>
-              <p>120 Property</p>
-            </div>
-          </span>
-        </div>
-        <div class="neighborhoods_image relative">
-          <span>
-            <img src="@/assets/Neighborhoods_Image3.svg" alt="" />
-            <img
-              class="absolute left-56 top-5"
-              src="@/assets/Neighborhoods_arrow.svg"
-              alt=""
-            />
-            <div class="text absolute bottom-10 left-5">
-              <h1>Singapore</h1>
-              <p>53Property</p>
-            </div>
-          </span>
-        </div>
-        <div class="neighborhoods_image relative">
-          <span>
-            <img src="@/assets/Neighborhoods_Image4.svg" alt="" />
-            <img
-              class="absolute left-56 top-5"
-              src="@/assets/Neighborhoods_arrow.svg"
-              alt=""
-            />
-            <div class="text absolute bottom-10 left-5">
-              <h1>Paris</h1>
-              <p>99 Property</p>
-            </div>
-          </span>
-        </div>
-      </div>
-    </div>
+
+  <section>
+    <DiscoverCoun />
   </section>
 </template>
 <script>
+import DiscoverCoun from "@/components/DiscoverCoun.vue";
 import PropertiesCoun from "@/components/PropertiesCoun.vue";
 export default {
   name: "property_view",
-  components: { PropertiesCoun },
+  components: { PropertiesCoun, DiscoverCoun },
 };
 </script>
 
@@ -147,63 +82,7 @@ body {
 }
 
 //End Landding Banner
-#neighborhoods {
-  .neighborhoods_title {
-    h3 {
-      font-family: Source Sans 3;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 38.5px;
-      letter-spacing: 0.3em;
-      color: var(--Primary_Color);
-      span {
-        color: var(--Secondary_Color);
-      }
-    }
-  }
-  .neighborhoods_detailes {
-    max-height: fit-content;
-    max-width: 100%;
-    h1 {
-      font-family: Kufam;
-      font-size: 45px;
-      font-weight: 700;
-      line-height: 53.32px;
-      color: var(--Primary_Color);
-    }
-  }
-  .neighborhoods_image {
-    span {
-      h1 {
-        font-family: Kufam;
-        font-size: 25px;
-        font-weight: 600;
-        line-height: 29.62px;
-        text-align: left;
-        color: white;
-      }
-      p {
-        font-family: Source Sans 3;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 23.7px;
-        text-align: left;
-        color: var(--Secondary_Color);
-      }
-    }
-  }
-}
 
 @media screen and (max-width: 900px) {
-  #neighborhoods {
-    .neighborhoods_card {
-      display: flex !important;
-      flex-direction: column !important;
-      align-items: center !important;
-      justify-content: space-around !important;
-      width: 100% !important;
-      margin: 0 !important;
-    }
-  }
 }
 </style>
