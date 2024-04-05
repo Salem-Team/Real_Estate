@@ -1,7 +1,59 @@
 <template>
   <div class="Agent_view">
     <div class="content">
-      <div class="bacground_img"></div>
+      <div class="bacground_img">
+        <v-container>
+          <v-col cols="12" class="posituon-relative">
+            <div class="agent">
+              <div
+                class="d-flex flex-column"
+                style="position: absolute; top: 300px"
+              >
+                <h3 class="parent flex gap-2">
+                  <span
+                    ><svg
+                      width="20"
+                      height="17"
+                      viewBox="0 0 27 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      x
+                    >
+                      <path
+                        d="M21.9375 7.64679V0.857143H17.7188V3.98839L13.5 0L0 12.8571H3.375V24H10.9688V15.4286H16.0312V24H23.625V12.8571H27L21.9375 7.64679Z"
+                        fill="#B16642"
+                      />
+                    </svg> </span
+                  ><span
+                    style="
+                      font-family: Kufam;
+                      font-size: 18px;
+                      font-weight: 700;
+                      line-height: 23.7px;
+                      letter-spacing: 0.275em;
+                      text-align: left;
+                    "
+                    >PROPERTY EXPERTS</span
+                  >
+                </h3>
+                <div
+                  class="last_title"
+                  style="
+                    font-family: Kufam;
+                    font-size: 50px;
+                    font-weight: 700;
+                    line-height: 77.02px;
+                    text-align: left;
+                    color: #3b3a5d;
+                  "
+                >
+                  Meet Our Agents
+                </div>
+              </div>
+            </div>
+          </v-col>
+        </v-container>
+      </div>
     </div>
     <!-- Contain Two Row 
      - The First Agent
