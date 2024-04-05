@@ -29,16 +29,22 @@
     <!-- End Landding Banner -->
   </section>
   <section>
-    <prop-coun />
+    <PropertiesCoun />
+  </section>
+
+  <section>
+    <DiscoverCoun />
   </section>
 </template>
 <script>
-import PropCoun from "@/components/PropCoun.vue";
+import DiscoverCoun from "@/components/DiscoverCoun.vue";
+import PropertiesCoun from "@/components/PropertiesCoun.vue";
 export default {
   name: "property_view",
-  components: { PropCoun },
+  components: { PropertiesCoun, DiscoverCoun },
 };
 </script>
+
 <style lang="scss" scoped>
 body {
   padding: 0;
@@ -76,4 +82,7 @@ body {
 }
 
 //End Landding Banner
+
+@media screen and (max-width: 900px) {
+}
 </style>
