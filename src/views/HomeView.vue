@@ -70,6 +70,10 @@
     <!--End About Section -->
   </section>
 
+  <section>
+    <PropertiesCoun />
+  </section>
+
   <section id="why_choose" class="w-full">
     <div class="properties m-10">
       <!--Start title -->
@@ -317,9 +321,10 @@
   </section>
 </template>
 <script>
+import PropertiesCoun from "@/components/PropertiesCoun.vue";
 export default {
   name: "HomeView",
-  components: {},
+  components: { PropertiesCoun },
 };
 </script>
 <style lang="scss" scoped>
