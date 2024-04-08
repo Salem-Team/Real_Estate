@@ -34,7 +34,7 @@
     <!--Start About Section -->
     <div class="about_subtitle bg-about_background p-10 w-7/12">
       <!--Start title -->
-      <div class="about_title flex flex-row justify-center mb-4">
+      <div class="about_title flex flex-row justify-left mb-4">
         <img src="@/assets/subtitle_icon.svg" alt="" />
         <h3><span>01</span> PROPERLAND INTRO</h3>
         <img src="@/assets/subtitle_icon.svg" alt="" />
@@ -61,7 +61,7 @@
       <!--End point part -->
     </div>
     <!--End About Subtitle-->
-    <div class="about_video flex flex-row relative justify-center">
+    <div class="about_video flex flex-row relative justify-center mr-20">
       <img src="@/assets/about_img.svg" alt="" />
       <a href="http://youtube.com" target="_blank" rel="noopener noreferrer"
         ><img class="absolute inset-1/3" src="@\assets\video_icon.svg" alt=""
@@ -161,6 +161,20 @@
       </div>
     </div>
   </section>
+
+  <section>
+    <AboutUs />
+  </section>
+
+  <section id="Services" class="mb-24">
+    <div class="Services_title flex flex-row items-center justify-center mt-10">
+      <img src="@/assets/subtitle_icon.svg" alt="" />
+      <h3 class="uppercase"><span>05</span> Services</h3>
+      <img src="@/assets/subtitle_icon.svg" alt="" />
+    </div>
+    <ServicesView />
+  </section>
+
   <section id="numbers">
     <div class="container m-10 w-11/12">
       <div class="flex flex-row items-center justify-center my-10">
@@ -322,9 +336,11 @@
 </template>
 <script>
 import PropertiesCoun from "@/components/PropertiesCoun.vue";
+import ServicesView from "@/components/ServicesComp.vue";
+import AboutUs from "@/components/AboutUs.vue";
 export default {
   name: "HomeView",
-  components: { PropertiesCoun },
+  components: { PropertiesCoun, ServicesView, AboutUs },
 };
 </script>
 <style lang="scss" scoped>
@@ -491,6 +507,20 @@ body {
     p {
       font-family: Source Sans 3;
       color: var(--Border_Color);
+    }
+  }
+}
+
+#Services .Services_title {
+  h3 {
+    font-family: Source Sans 3;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38.5px;
+    letter-spacing: 0.3em;
+    color: var(--Primary_Color);
+    span {
+      color: var(--Secondary_Color);
     }
   }
 }
