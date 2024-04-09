@@ -34,7 +34,7 @@
     <!--Start About Section -->
     <div class="about_subtitle bg-about_background p-10 w-7/12">
       <!--Start title -->
-      <div class="about_title flex flex-row justify-center mb-4">
+      <div class="about_title flex flex-row justify-left mb-4">
         <img src="@/assets/subtitle_icon.svg" alt="" />
         <h3><span>01</span> PROPERLAND INTRO</h3>
         <img src="@/assets/subtitle_icon.svg" alt="" />
@@ -61,13 +61,17 @@
       <!--End point part -->
     </div>
     <!--End About Subtitle-->
-    <div class="about_video flex flex-row relative justify-center">
-      <img src="@/assets/about_img.svg" alt="" />
+    <div class="about_video flex flex-row relative justify-center mr-20">
+      <img class="video_img" src="@/assets/about_img.svg" alt="" />
       <a href="http://youtube.com" target="_blank" rel="noopener noreferrer"
         ><img class="absolute inset-1/3" src="@\assets\video_icon.svg" alt=""
       /></a>
     </div>
     <!--End About Section -->
+  </section>
+
+  <section>
+    <PropertiesCoun />
   </section>
 
   <section id="why_choose" class="w-full">
@@ -157,6 +161,20 @@
       </div>
     </div>
   </section>
+
+  <section>
+    <AboutUs />
+  </section>
+
+  <section id="Services" class="mb-24">
+    <div class="Services_title flex flex-row items-center justify-center mt-10">
+      <img src="@/assets/subtitle_icon.svg" alt="" />
+      <h3 class="uppercase"><span>05</span> Services</h3>
+      <img src="@/assets/subtitle_icon.svg" alt="" />
+    </div>
+    <ServicesView />
+  </section>
+
   <section id="numbers">
     <div class="container m-10 w-11/12">
       <div class="flex flex-row items-center justify-center my-10">
@@ -185,12 +203,79 @@
     </div>
   </section>
 
-  <!-- start Discover -->
-  <Discover />
-  <!-- end Discover -->
+  <section id="neighborhoods">
+    <div
+      class="neighborhoods_title flex flex-row mb-4 text-center items-center justify-center"
+    >
+      <img src="@/assets/subtitle_icon.svg" alt="" />
+      <h3 class="uppercase"><span>06</span> Neighborhoods</h3>
+      <img src="@/assets/subtitle_icon.svg" alt="" />
+    </div>
+    <div class="neighborhoods_detailes text-center">
+      <h1 class="mb-10">Discover The Neighborhoods</h1>
+      <div class="neighborhoods_card m-10 flex flex-row gap-5">
+        <div class="neighborhoods_image relative">
+          <span>
+            <img src="@/assets/Neighborhoods_Image1.svg" alt="" />
+            <img
+              class="absolute left-56 top-5"
+              src="@/assets/Neighborhoods_arrow.svg"
+              alt=""
+            />
+            <div class="text absolute bottom-10 left-5">
+              <h1>New York</h1>
+              <p>250 Property</p>
+            </div>
+          </span>
+        </div>
+        <div class="neighborhoods_image relative">
+          <span>
+            <img src="@/assets/Neighborhoods_Image2.svg" alt="" />
+            <img
+              class="absolute left-56 top-5"
+              src="@/assets/Neighborhoods_arrow.svg"
+              alt=""
+            />
+            <div class="text absolute bottom-10 left-5">
+              <h1>Atlanta</h1>
+              <p>120 Property</p>
+            </div>
+          </span>
+        </div>
+        <div class="neighborhoods_image relative">
+          <span>
+            <img src="@/assets/Neighborhoods_Image3.svg" alt="" />
+            <img
+              class="absolute left-56 top-5"
+              src="@/assets/Neighborhoods_arrow.svg"
+              alt=""
+            />
+            <div class="text absolute bottom-10 left-5">
+              <h1>Singapore</h1>
+              <p>53Property</p>
+            </div>
+          </span>
+        </div>
+        <div class="neighborhoods_image relative">
+          <span>
+            <img src="@/assets/Neighborhoods_Image4.svg" alt="" />
+            <img
+              class="absolute left-56 top-5"
+              src="@/assets/Neighborhoods_arrow.svg"
+              alt=""
+            />
+            <div class="text absolute bottom-10 left-5">
+              <h1>Paris</h1>
+              <p>99 Property</p>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="client">
-    <div class="container m-10">
+    <div class="container p-10">
       <div class="client_detailes text-center p-10">
         <h1 class="mb-10">More than 50+ Brands Trusted World Wide</h1>
         <img src="@\assets\Content-icons.svg" alt="" />
@@ -250,11 +335,12 @@
   </section>
 </template>
 <script>
-import Discover from "@/components/DiscoverCoun.vue";
-
+import PropertiesCoun from "@/components/PropertiesCoun.vue";
+import ServicesView from "@/components/ServicesComp.vue";
+import AboutUs from "@/components/AboutUs.vue";
 export default {
   name: "HomeView",
-  components: { Discover },
+  components: { PropertiesCoun, ServicesView, AboutUs },
 };
 </script>
 <style lang="scss" scoped>
@@ -425,6 +511,20 @@ body {
   }
 }
 
+#Services .Services_title {
+  h3 {
+    font-family: Source Sans 3;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38.5px;
+    letter-spacing: 0.3em;
+    color: var(--Primary_Color);
+    span {
+      color: var(--Secondary_Color);
+    }
+  }
+}
+
 #numbers {
   .number {
     font-family: Kufam;
@@ -497,7 +597,6 @@ body {
 
 #client {
   .client_detailes {
-    width: 1199px;
     background: #f5f1ef;
     h1 {
       font-family: Kufam;
@@ -584,20 +683,101 @@ body {
     align-items: center !important;
     margin-top: 16rem !important;
     margin-left: 0 !important;
+    .image {
+      width: 90%;
+      left: auto !important;
+      margin-left: 0;
+    }
+    .text {
+      width: 80%;
+      margin-top: 0;
+      text-align: center !important;
+    }
   }
-  .text {
-    width: 80%;
-    margin-top: 0;
-    text-align: center !important;
-  }
-  .image {
-    width: 90%;
-    left: auto !important;
-    margin-left: 0;
-  }
+
   .about_subtitle {
     height: auto;
     margin-top: 32px !important;
+  }
+
+  #numbers {
+    .container {
+      margin: 0 !important;
+      width: 100% !important;
+      div {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: space-around !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text {
+    h1 {
+      font-size: 40px !important;
+      line-height: 1.2 !important;
+    }
+    p {
+      font-size: 16px !important;
+      line-height: 1.5 !important;
+    }
+    button {
+      font-size: 16px !important;
+      padding: 16px 20px !important;
+    }
+  }
+
+  .about_subtitle {
+    .about_title h3 {
+      font-size: 18px !important;
+      line-height: 1.5 !important;
+    }
+    .details {
+      h1 {
+        font-size: 32px !important;
+        line-height: 1.2 !important;
+      }
+      p {
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+      }
+    }
+  }
+
+  #blog {
+    .container {
+      padding: 0 !important;
+      .image {
+        margin: auto !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  #about {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2rem !important;
+    margin: auto !important;
+    .about_subtitle {
+      margin-top: 20px !important;
+      width: 90% !important;
+    }
+    .about_video {
+      margin: 0 !important;
+      width: 100% !important;
+      .video_img {
+        width: 90% !important;
+      }
+    }
+  }
+  .details {
+    max-width: 100% !important;
   }
 
   #why_choose {
@@ -643,77 +823,7 @@ body {
       font-size: 20px !important; /* Adjust font size for smaller screens */
     }
   }
-  #numbers {
-    .container {
-      margin: 0 !important;
-      width: 100% !important;
-      div {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: space-around !important;
-      }
-    }
-  }
-}
 
-@media screen and (max-width: 480px) {
-  .text {
-    h1 {
-      font-size: 40px !important;
-      line-height: 1.2 !important;
-    }
-    p {
-      font-size: 16px !important;
-      line-height: 1.5 !important;
-    }
-    button {
-      font-size: 16px !important;
-      padding: 16px 20px !important;
-    }
-  }
-  .about {
-    margin: 90px !important;
-    width: 30% !important;
-    padding: 60px !important;
-  }
-  .about_subtitle {
-    gap: 90px;
-    margin-right: 120px !important;
-    margin-left: 30px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    .about_title h3 {
-      font-size: 18px !important;
-      line-height: 1.5 !important;
-    }
-    .details {
-      h1 {
-        font-size: 32px !important;
-        line-height: 1.2 !important;
-      }
-      p {
-        font-size: 16px !important;
-        line-height: 1.5 !important;
-      }
-    }
-  }
-}
-@media screen and (max-width: 900px) {
-  #about {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: space-around !important;
-    .about_subtitle {
-      margin: 0;
-      width: 100% !important;
-    }
-  }
-  .details {
-    max-width: 100% !important;
-  }
   #neighborhoods {
     .neighborhoods_card {
       display: flex !important;
@@ -728,6 +838,8 @@ body {
   #client {
     width: 100% !important;
     .container {
+      margin: auto !important;
+      padding: 0 !important;
       .client_detailes {
         width: 100% !important;
         h1 {
@@ -737,6 +849,16 @@ body {
           width: 90% !important;
         }
       }
+    }
+  }
+
+  #blog {
+    margin-top: 20px !important;
+    .container {
+      margin: auto !important;
+      width: 100% !important;
+      height: 100% !important;
+      overflow: hidden !important;
     }
   }
 }

@@ -1,141 +1,116 @@
 <template>
-  <section class="banner mb-1">
-    <!-- Start Landding Banner -->
-    <div class="parent">
-      <v-container>
-        <v-row>
-          <v-col cols="5" class="mt-64 mb-4">
-            <div class="cont d-flex flex-column text-left">
-              <h4 class="flex flex-row gap-1 p-1">
-                <span><img src="@/assets/home_icon.svg" alt="" /></span
-                >properties
-              </h4>
-              <h1 class="title">Browse properties</h1>
-            </div>
-          </v-col>
-          <v-col cols="7">
-            <div class="parent_img relative">
-              <img
-                class="w-full h-fit absolute top-5"
-                src="@/assets/property_img.svg"
-                alt=""
-                style="left: 118px"
-              />
-            </div>
-          </v-col>
-        </v-row>
-      </v-container>
+  <section class="home overflow-hidden w-full">
+    <div class="landing flex flex-column mt-64 ml-10">
+      <div class="text text-left w-5/12 mt-10">
+        <div id="title" class="flex flex-row gap-1 w-7/12 mb-4 p-1">
+          <span><img src="@/assets/home_icon.svg" alt="" /></span>
+          properties
+        </div>
+        <h1 class="mb-4">Browse properties</h1>
+      </div>
+      <div class="image relative w-6/12 ml-60">
+        <img
+          class="absolute left-96 bottom-0.5 mr-1 max-w-full"
+          src="@/assets/property_img.svg"
+          alt=""
+        />
+      </div>
     </div>
     <!-- End Landding Banner -->
   </section>
   <section>
     <PropertiesCoun />
   </section>
+
   <section>
-    <Discover />
+    <DiscoverCoun />
   </section>
 </template>
 <script>
-import Discover from "@/components/DiscoverCoun.vue";
+import DiscoverCoun from "@/components/DiscoverCoun.vue";
 import PropertiesCoun from "@/components/PropertiesCoun.vue";
 export default {
   name: "property_view",
+<<<<<<< HEAD
   components: { Discover, PropertiesCoun },
+=======
+  components: { PropertiesCoun, DiscoverCoun },
+>>>>>>> f86238978c7f5083806b16f4edc93839d786d286
 };
 </script>
+
 <style lang="scss" scoped>
 body {
   padding: 0;
   margin: 0;
 }
 //Start Landding Banner
-.banner {
-  .parent {
-    background-image: url("../assets/Background-1.jpg");
-    background-size: cover;
-    overflow: hidden;
-    .cont {
-      h4 {
-        background-color: var(--Background_color);
-        width: fit-content;
-        color: var(--Border_Color);
-        line-height: 23.7px;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        font-size: 17px;
-        font-weight: lighter;
-        margin-bottom: 30px;
-        font-family: kufam;
-      }
-      h1 {
-        color: var(--Primary_Color);
-        font-family: Kufam;
-        font-size: 65px;
-        font-weight: 700;
-        line-height: 77.02px;
-        text-align: left;
-      }
+.home {
+  background: url(/src/assets/Background-1.jpg) no-repeat center;
+  background-size: cover;
+  height: fit-content;
+  #title {
+    background: linear-gradient(
+      270deg,
+      #f3d1c1 -3.75%,
+      rgba(255, 178, 141, 0) 108.58%
+    );
+    line-height: 23.7px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 17px;
+    font-family: kufam;
+    color: var(--Border_Color);
+  }
+  .text {
+    h1 {
+      color: var(--Primary_Color);
+      font-family: Kufam;
+      font-size: 65px;
+      font-weight: 700;
+      line-height: 77.02px;
+      text-align: left;
+    }
+    p {
+      font-family: Source Sans 3;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 23.7px;
+      text-align: left;
+      color: var(--Border_Color);
+    }
+    button {
+      padding: 24px 30px;
+      border-radius: 5px;
+      font-family: "Kufam";
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 23.7px;
+      text-align: center;
+      border: none;
+      color: var(--Primary_Color);
+      background-color: white;
     }
   }
 }
 
 //End Landding Banner
-#neighborhoods {
-  .neighborhoods_title {
-    h3 {
-      font-family: Source Sans 3;
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 38.5px;
-      letter-spacing: 0.3em;
-      color: var(--Primary_Color);
-      span {
-        color: var(--Secondary_Color);
-      }
-    }
-  }
-  .neighborhoods_detailes {
-    max-height: fit-content;
-    max-width: 100%;
-    h1 {
-      font-family: Kufam;
-      font-size: 45px;
-      font-weight: 700;
-      line-height: 53.32px;
-      color: var(--Primary_Color);
-    }
-  }
-  .neighborhoods_image {
-    span {
-      h1 {
-        font-family: Kufam;
-        font-size: 25px;
-        font-weight: 600;
-        line-height: 29.62px;
-        text-align: left;
-        color: white;
-      }
-      p {
-        font-family: Source Sans 3;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 23.7px;
-        text-align: left;
-        color: var(--Secondary_Color);
-      }
-    }
-  }
-}
 
-@media screen and (max-width: 900px) {
-  #neighborhoods {
-    .neighborhoods_card {
-      display: flex !important;
-      flex-direction: column !important;
-      align-items: center !important;
-      justify-content: space-around !important;
-      width: 100% !important;
-      margin: 0 !important;
+@media screen and (max-width: 768px) {
+  .landing {
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 16rem !important;
+    margin-left: 0 !important;
+    .image {
+      width: 90%;
+      left: auto !important;
+      margin-left: 0;
+    }
+    .text {
+      width: 80%;
+      margin-top: 0;
+      text-align: center !important;
     }
   }
 }
