@@ -45,7 +45,7 @@
               </v-card-text>
               <!-- seconed pragraph -->
               <v-card-text
-                class="px-1 py-1 w-8/12"
+                class="parent_text px-1 py-1 w-8/12"
                 style="
                   color: #b16642;
                   font-size: 17px;
@@ -106,6 +106,22 @@
     span {
       color: var(--Secondary_Color);
     }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .cover {
+    margin-top: 0 !important;
+    background-size: auto;
+    .cont {
+      margin-top: -60px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .parent_text {
+    font-size: 16px !important;
+    width: 100% !important;
   }
 }
 </style>

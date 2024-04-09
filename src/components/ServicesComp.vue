@@ -384,7 +384,7 @@
           </v-card>
         </v-col>
         <!-- Fourth -->
-        <v-col cols="12" xs="12" sm="6" md="4" class="pl-24">
+        <v-col cols="12" xs="12" sm="6" md="4" class="Fourth pl-24">
           <v-card
             variant="flat"
             class=""
@@ -504,7 +504,7 @@
           </v-card>
         </v-col>
         <!-- Fifth -->
-        <v-col cols="12" xs="12" sm="6" md="4" class="mr-32">
+        <v-col cols="12" xs="12" sm="6" md="4" class="Fifth mr-32">
           <v-card
             variant="flat"
             class=""
@@ -686,11 +686,15 @@
     display: none !important;
   }
 }
-@media (min-width: 600px) {
-}
+
 @media (max-width: 960px) {
   .bg_blog {
     height: 375px !important;
+  }
+  .Fifth,
+  .Fourth {
+    margin-right: 0 !important;
+    padding-left: 0 !important;
   }
 }
 // End First Section

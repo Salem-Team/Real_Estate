@@ -24,9 +24,13 @@
                 class="head_title"
                 style="
                   text-wrap: wrap;
-                  width: 70%;
+                  width: 100%;
                   color: #3b3a5d;
-                  font-weight: bold;
+                  font-family: Kufam;
+                  font-size: 40px;
+                  font-weight: 700;
+                  line-height: 53.32px;
+                  text-align: left;
                 "
                 >Learn More About Who We Are in Real Estate
               </v-card-title>
@@ -63,9 +67,13 @@
                 class="head_title"
                 style="
                   text-wrap: wrap;
-                  width: 70%;
+                  width: 100%;
                   color: #3b3a5d;
-                  font-weight: bold;
+                  font-family: Kufam;
+                  font-size: 34px;
+                  font-weight: 700;
+                  line-height: 53.32px;
+                  text-align: left;
                 "
                 >We're reinventing the space
               </v-card-title>
@@ -149,3 +157,11 @@
   </section>
   <!-- End Learn More -->
 </template>
+<style lang="scss" scoped>
+@media screen and (max-width: 600px) {
+  .blog_contain {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+</style>
