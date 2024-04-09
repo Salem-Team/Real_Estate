@@ -1,30 +1,20 @@
 <template>
-  <section class="banner mb-1">
-    <!-- Start Landding Banner -->
-    <div class="parent">
-      <v-container>
-        <v-row>
-          <v-col cols="5" class="mt-64 mb-4">
-            <div class="cont d-flex flex-column text-left mt-24">
-              <h4 class="flex flex-row gap-1 p-1">
-                <span><img src="@/assets/home_icon.svg" alt="" /></span>ABOUT
-                PROPERLAND
-              </h4>
-              <h1 class="title">About Our Real Estate</h1>
-            </div>
-          </v-col>
-          <v-col cols="7">
-            <div class="parent_img relative">
-              <img
-                class="w-full h-fit absolute top-44"
-                src="@/assets/about_properland.svg"
-                alt=""
-                style="left: 118px"
-              />
-            </div>
-          </v-col>
-        </v-row>
-      </v-container>
+  <section class="home overflow-hidden w-full">
+    <div class="landing flex flex-column mt-64 ml-10">
+      <div class="text text-left w-5/12 mt-10">
+        <div id="title" class="flex flex-row gap-1 w-7/12 mb-4 p-1">
+          <span><img src="@/assets/home_icon.svg" alt="" /></span>
+          ABOUT PROPERLAND
+        </div>
+        <h1 class="mb-4">About Our Real Estate</h1>
+      </div>
+      <div class="image relative w-6/12 ml-60">
+        <img
+          class="absolute left-96 bottom-0.5 mr-1 max-w-full"
+          src="@/assets/about_properland.svg"
+          alt=""
+        />
+      </div>
     </div>
     <!-- End Landding Banner -->
   </section>
@@ -60,7 +50,7 @@
                   </p>
                 </div>
               </div>
-              <div class="second first flex flex-row justify-left">
+              <div class="second flex flex-row justify-left">
                 <img src="@\assets\Video_mission_Icon.svg" alt="" />
                 <div class="col flex flex-col justify-center w-9/12 gap-2">
                   <h3>Our Mission</h3>
@@ -108,7 +98,7 @@
     <AgentsCard />
   </section>
   <section id="client">
-    <div class="container m-10">
+    <div class="container p-12">
       <div class="client_detailes text-center p-10">
         <h1 class="mb-10">More than 50+ Brands Trusted World Wide</h1>
         <img src="@\assets\Content-icons.svg" alt="" />
@@ -146,33 +136,52 @@ body {
   margin: 0;
 }
 //Start Landding Banner
-.banner {
-  .parent {
-    background-image: url("../assets/Background-1.jpg");
-    background-size: cover;
-    overflow: hidden;
-    .cont {
-      h4 {
-        background-color: var(--Background_color);
-        width: fit-content;
-        color: var(--Border_Color);
-        line-height: 23.7px;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        font-size: 17px;
-        font-weight: lighter;
-        margin-bottom: 30px;
-        font-family: kufam;
-      }
-      h1 {
-        width: 512px;
-        color: var(--Primary_Color);
-        font-family: Kufam;
-        font-size: 65px;
-        font-weight: 700;
-        line-height: 77.02px;
-        text-align: left;
-      }
+.home {
+  background: url(/src/assets/Background-1.jpg) no-repeat center;
+  background-size: cover;
+  height: fit-content;
+  #title {
+    background: linear-gradient(
+      270deg,
+      #f3d1c1 -3.75%,
+      rgba(255, 178, 141, 0) 108.58%
+    );
+    line-height: 23.7px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 17px;
+    font-family: kufam;
+    color: var(--Border_Color);
+  }
+  .text {
+    h1 {
+      width: 512px !important;
+      font-family: Kufam;
+      font-size: 55px;
+      font-weight: 700;
+      line-height: 77.02px;
+      text-align: left;
+      color: var(--Primary_Color);
+    }
+    p {
+      font-family: Source Sans 3;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 23.7px;
+      text-align: left;
+      color: var(--Border_Color);
+    }
+    button {
+      padding: 24px 30px;
+      border-radius: 5px;
+      font-family: "Kufam";
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 23.7px;
+      text-align: center;
+      border: none;
+      color: var(--Primary_Color);
+      background-color: white;
     }
   }
 }
@@ -275,7 +284,6 @@ body {
 }
 #client {
   .client_detailes {
-    width: 1199px;
     background: #f5f1ef;
     h1 {
       font-family: Kufam;
@@ -297,11 +305,70 @@ body {
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .landing {
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 16rem !important;
+    margin-left: 0 !important;
+    .image {
+      width: 90%;
+      left: auto !important;
+      margin-left: 0;
+    }
+    .text {
+      width: 80%;
+      margin-top: 0;
+      text-align: center !important;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #video {
+    .video_details {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      width: 100% !important;
+      h1 {
+        font-size: x-large !important;
+        width: 100% !important;
+      }
+      .view {
+        padding-left: 0 !important;
+        width: 100% !important;
+        .first,
+        .second {
+          display: flex !important;
+          flex-direction: column !important;
+          justify-content: center !important;
+          align-items: center !important;
+          width: 100% !important;
+          .col {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 900px) {
+  #video {
+    .video_details {
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      align-items: center !important;
+      width: 100% !important;
+    }
+  }
   #client {
     width: 100% !important;
     .container {
+      margin: auto !important;
+      padding: 0 !important;
       .client_detailes {
         width: 100% !important;
         h1 {
