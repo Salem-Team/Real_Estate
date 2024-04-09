@@ -1,7 +1,5 @@
 <template>
-  <section class="banner mb-1">
-  
-  </section>
+  <section class="banner mb-1"></section>
   <section>
     <prop-coun />
   </section>

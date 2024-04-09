@@ -16,7 +16,7 @@
             style="border-right: 1px solid #e4e4e4"
             class="col_1"
           >
-            <div class="parent pt-15 pb-15 pr-15 text-center">
+            <div class="parent pt-15 pr-15 text-center">
               <div
                 class="logo"
                 style="display: flex; justify-content: flex-start"

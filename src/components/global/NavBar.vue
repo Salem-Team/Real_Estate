@@ -95,7 +95,7 @@
                 <div class="d-flex justify-space-around">
                   <v-menu>
                     <template v-slot:activator="{ props }">
-                      <v-btn v-bind="props">
+                      <v-btn v-bind="props" style="height: 57px">
                         Pages
                         <svg
                           width="14"
@@ -280,7 +280,7 @@ export default {
     icon: "justify",
     toggle_none: null,
     toggle_one: 0,
-    toggle_exclusive: 2,
+    toggle_exclusive: 0,
     toggle_multiple: [0, 1, 2],
   }),
 };
