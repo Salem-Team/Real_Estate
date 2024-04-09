@@ -2,7 +2,7 @@
   <div class="banner mb-5">
     <img src="@/assets/property_Banner.svg" alt="" />
   </div>
-  <section id="content " class="text-primary_color">
+  <section id="content" class="text-primary_color">
     <div class="content_details flex flex-row flex-wrap justify-center">
       <div class="details w-2/4">
         <h4 class="flex flex-row flex-wrap">
@@ -64,7 +64,7 @@
       >
         <div class="About_Agent w-3/12">
           <div
-            class="flex flex-row flex-wrap my-6 bg-sidebar_color rounded-md border border-sidebar_border p-5"
+            class="forms flex flex-row flex-wrap my-6 bg-sidebar_color rounded-md border border-sidebar_border p-5"
           >
             <h1 class="font-bold text-2xl">About Agent</h1>
             <p>
@@ -139,7 +139,7 @@
             </form>
           </div>
         </div>
-        <div class="flex flex-row flex-wrap w-3/6">
+        <div class="text flex flex-row flex-wrap w-3/6">
           <div>
             <h1 class="font-bold text-2xl">About the property</h1>
             <p>
@@ -234,7 +234,7 @@
       Property Gallery
     </h1>
     <div
-      class="container px-10 pb-10 flex sm:flex-col flex-row items-center justify-around gap-9"
+      class="container px-10 pb-10 flex sm:flex-col flex-row items-center justify-around gap-9 flex-wrap"
     >
       <img class="w-3/6" src="@\assets\Property_gallery1.svg" alt="" />
       <img class="w-3/6" src="@\assets\Property_gallery2.svg" alt="" />
@@ -252,4 +252,32 @@ export default {
   components: { PropertiesCoun },
 };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media screen and (max-width: 768px) {
+  .banner {
+    width: 100% !important;
+    background-size: auto !important;
+  }
+
+  #content {
+    .details {
+      width: 80% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Sidebar_details {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    width: 100% !important;
+    .About_Agent {
+      width: 50% !important;
+    }
+    .text {
+      width: 80% !important;
+    }
+  }
+}
+</style>
